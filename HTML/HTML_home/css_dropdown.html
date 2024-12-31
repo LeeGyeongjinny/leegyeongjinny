@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운 테스트</title>
+    <style>
+        /* a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color : #01083A;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .header-list-flex {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+
+        .header-list-hover a {
+            color: #01083A;
+            font-size: 17pt;
+            font-weight: 400;
+            padding: 5px 10px;
+            position: relative;
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .header-list-hover a:before, .header-list-hover a:after {
+            content: "";
+            transition: 0.3s all ease;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            width: 0;
+            height: 2px;
+        }
+
+        .header-list-hover a:before {
+            right: 0;
+            top: 0;
+        }
+
+        .header-list-hover a:after {
+            left: 0;
+            bottom: 0;
+        }
+
+        .header-list-hover a:hover:before, .header-list-hover a:hover:after {
+            width: 100%;
+            background: #01083A;
+        }
+        .header-list-dropdown{
+            position : relative;
+            display : inline-block;
+        }
+
+        .header-list-dropdown-content{
+            display : none;
+            position : absolute;
+            z-index : 1; 
+        }
+
+        .header-list-dropdown-content a{
+            display : block;
+            font-size: 15px;
+        }
+
+        .header-list-dropdown:hover .header-list-dropdown-content {
+            display: block;
+        } */
+
+        /* ***************************************** */
+            
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color : #01083A;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .header-list-flex {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+
+        .header-list-hover a {
+            color: #01083A;
+            font-size: 17px;
+            font-weight: 400;
+            padding: 5px 10px;
+            /**/
+            position: relative;
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .header-list-hover a:before, .header-list-hover a:after {
+            content: "";
+            transition: 0.3s all ease;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            width: 0;
+            height: 2px;
+            /* background: rgba(255, 255, 255, 0.5); */
+        }
+
+        .header-list-hover a:before {
+            right: 0;
+            top: 0;
+        }
+
+        .header-list-hover a:after {
+            left: 0;
+            bottom: 0;
+        }
+
+        .header-list-hover a:hover:before, .header-list-hover a:hover:after {
+            width: 100%;
+            background: #01083A;
+        }
+        .header-list-dropdown{
+            position : relative;
+            display : inline-block;
+        }
+
+        .header-list-dropdown-content{
+            /* display : none;
+            position : absolute;
+            z-index : 1; */
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            /* background-color: #f9f9f9; */
+            /* display: flex; */
+            z-index: 1;
+        }
+
+        .header-list-dropdown-content a{
+            /* display : block; */
+            font-size: 18px;
+            white-space: nowrap; 
+        }
+
+        .header-list-dropdown:hover .header-list-dropdown-content {
+            /* display: block; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            
+    </style>
+</head>
+<body>
+    <!-- <div class="dropdown">
+        <span class="dropbtn">drop down</span>
+        <div class="dropdown-content">
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+        </div>
+    </div>  -->
+
+
+    <!-- 드롭다운 세로드롭 -->
+    <!-- <ul class="header-list-flex">
+        <li class="header-list-hover"><a href="">호텔</a></li>
+        <li class="header-list-hover"><a href="">상품</a></li>
+        <li class="header-list-hover">
+            <div class="header-list-dropdown">
+                <a href="" class="header-list-dropbtn">게시판</a>
+                <div class="header-list-hover header-list-dropdown-content">
+                    <a href="#">리뷰</a>
+                    <a href="#">자유</a>
+                </div>
+            </div>
+        </li>
+    </ul> -->
+    
+    
+    <!-- 드롭다운 가로드롭 -->
+    <ul class="header-list-flex">
+        <li class="header-list-hover"><a href="">호텔</a></li>
+        <li class="header-list-hover"><a href="">상품</a></li>
+        <li class="header-list-hover">
+            <div class="header-list-dropdown">
+                <a href="" class="header-list-dropbtn">게시판</a>
+                <div class="header-list-hover header-list-dropdown-content">
+                    <a href="#">리뷰</a>
+                    <a href="#">자유</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover 테스트</title>
+    <style>
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        a:hover, a:focus {
+            outline: none;
+            text-decoration: none;
+        }
+        h3 {
+            color: #fff;
+            font-weight: bold;
+            margin: 0 0 50px 0;
+            position: relative;
+            padding: 0 0 5px 0;
+        }
+        h3:before {
+            content: "";
+            background: rgba(255, 255, 255, 0.1);
+            bottom: -4px;
+            width: 25%;
+            height: 1px;
+            left: 0;
+            position: absolute;
+        }
+
+        .back {
+            padding: 50px 0 150px 0;
+        }
+        .color-5 {
+            background: #353535;
+        }
+        .menu a {
+            color: rgba(255, 0, 0, 0.8);
+            /* font-family: Lato; */
+            font-size: 17pt;
+            font-weight: 400;
+            padding: 15px 25px;
+            /**/
+            position: relative;
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        /* 25번 */
+        /* .SMN_effect-25 a {
+            letter-spacing: 0;
+            transition: 0.35s;
+        }
+
+        .SMN_effect-25 a:hover, .SMN_effect-25 a:active {
+            letter-spacing: 5px;
+            transition: 0.35s;
+        }
+
+        .SMN_effect-25 a:after {
+        bottom: -10px;
+        }
+
+        .SMN_effect-25 a:before {
+            top: -10px;
+        }
+
+        .SMN_effect-25 a:after, .SMN_effect-25 a:before {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border: 1px solid rgba(255, 255, 255, 0);
+            content: " ";
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            transition: all 280ms ease-in-out;
+            width: 0;
+        }
+
+        .SMN_effect-25 a:hover:after, .SMN_effect-25 a:hover:before {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-color: #fff;
+            transition: width 350ms ease-in-out;
+            width: 100%;
+        }
+
+        .SMN_effect-25 a:hover:before {
+            width: 100%;
+        } */
+        /* .header-list-btn:hover, .header-list-btn:active {
+            letter-spacing: 5px;
+            transition: 0.35s;
+        }
+
+        .header-list-btn:after {
+            bottom: -10px;
+        }
+
+        .header-list-btn:before {
+            top: -10px;
+        }
+
+        .header-list-btn:after, .header-list-btn:before {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border: 1px solid rgba(255, 255, 255, 0);
+            content: " ";
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            transition: all 280ms ease-in-out;
+            width: 0;
+        }
+
+        .header-list-btn:hover:after, .header-list-btn:hover:before {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-color: #000;
+            transition: width 350ms ease-in-out;
+            width: 100%;
+        }
+
+        .header-list-btn:hover:before {
+            width: 100%;
+        } */
+
+        /*
+        ---------------------------------------
+        hover effect 30
+        ---------------------------------------
+        */
+        
+        .color-10 {
+            background: #353535;
+        }
+
+        .SMN_effect-30 a:before, .SMN_effect-30 a:after {
+            content: "";
+            transition: 0.5s all ease;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .SMN_effect-30 a:before {
+            right: 0;
+            top: 0;
+        }
+
+        .SMN_effect-30 a:after {
+            left: 0;
+            bottom: 0;
+        }
+
+        .SMN_effect-30 a:hover:before, .SMN_effect-30 a:hover:after {
+            width: 100%;
+            background: #000;
+        }
+
+
+
+        .btn {
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center; 
+        }   
+        .btn:hover, .btn:focus {
+            outline: none;
+        }
+        .header-list {
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            gap: 20px;
+        }
+        .header-list > :last-child {
+            margin-left: auto;
+        }
+        .header-list-btn a {
+            color: rgba(255, 0, 0, 0.8);
+            /* font-family: Lato; */
+            font-size: 17pt;
+            font-weight: 400;
+            padding: 15px 25px;
+            /**/
+            position: relative;
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .header-list-btn a:before, .header-list-btn a:after {
+            content: "";
+            transition: 0.5s all ease;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .header-list-btn a:before {
+            right: 0;
+            top: 0;
+        }
+
+        .header-list-btn a:after {
+            left: 0;
+            bottom: 0;
+        }
+
+        .header-list-btn a:hover:before, .header-list-btn a:hover:after {
+            width: 100%;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- start -->
+    <!-- <div class="back color-5">
+        <div class="row columns">
+            <h3>Effect 25</h3>
+            <ul class="menu align-center expanded text-center SMN_effect-25">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Notes</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- // end -->
+
+    <!-- start -->
+    <div class="back color-10">
+        <div class="row columns">
+        <h3>Effect 30</h3>
+        <ul class="menu align-center expanded text-center SMN_effect-30">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Notes</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+    <!-- // end -->   
+
+    <!-- <div class="header-list">
+        <button class="btn header-list-btn">호텔</button>
+        <button class="btn header-list-btn">상품</button>
+        <button class="btn header-list-btn">게시판</button>
+        <div class="header-search-bar"> 
+            <input class="header-search" type="text" required placeholder="Q 어디로 놀러가세요?" >
+            <button class="btn bg-navy header-bg-btn">검색</button>
+        </div>
+    </div> -->
+
+    <ul class="menu SMN_effect-30">
+        <li><a href="">호텔</a></li>
+        <li><a href="">상품</a></li>
+        <li><a href="">게시판</a></li>
+    </ul>
+
+
+
+    <div class="header-list">
+        <ul class="header-list-btn">
+            <li><a href="">호텔</a></li>
+            <li><a href="">상품</a></li>
+            <li><a href="">게시판d</a></li>
+        </ul>
+        <!-- <button class="btn header-list-btn">호텔</button>
+        <button class="btn header-list-btn">상품</button>
+        <button class="btn header-list-btn">게시판</button> -->
+        <div class="header-search-bar"> 
+            <input class="header-search" type="text" required placeholder="Q 어디로 놀러가세요?" >
+            <button class="btn bg-navy header-bg-btn">검색</button>
+        </div>
+    </div>
+</body>
+</html>

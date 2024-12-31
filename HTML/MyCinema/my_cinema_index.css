@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* sidebar */
+
+.sidebar {
+    background-color: #005c5c;
+}
+
+h1 {
+    margin: 3rem auto;
+    text-align: center;
+    color: #fff;
+}
+
+.sidebar-list {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 3rem;   
+}
+
+.sidebar-list > li {
+    padding: 0.2rem 1rem;
+}
+
+.sidebar-list > li:nth-child(1) {
+    background-color: #009e9e;
+    font-weight: 900;
+    padding: 0.5rem 1rem;
+}
+
+.sidebar-list > li:not(:nth-child(1)):hover {
+    background-color: #000;
+    opacity: 0.8;
+    transition: all 1.5s;
+}
+
+/* main */
+
+.main {
+    background-color: #a4fcf0ad;
+}
+
+.main-search {
+    height: 50px;
+}
+
+.main-search > form {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 1rem;
+}
+
+#search {
+    width: 80%;
+}
+
+.btn-search {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #005c5c;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.main-title {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../TEST/img/IE001717273_STD.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h2 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.card-img {
+    padding-top: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-title {
+    margin: 1rem 0;
+}
+
+.btn-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #000;
+}
