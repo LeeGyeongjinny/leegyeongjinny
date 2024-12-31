@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27강 Position exercise</title>
+    <style>
+        .slidewrapper{
+            width: 50%;
+            height: 400px;
+            margin: 0 auto;
+            background-color: #ebebeb;
+            position: relative;
+        }
+        .btn{
+            padding: 0 20px;
+            line-height: 50px;
+            color: #fff;
+            background: #000;
+            text-decoration: none;
+            display: inline-block;
+            position: absolute;
+            /* top: 200px;
+            margin-top: -25px; */ /* 이렇게 해도 됨 */
+            top: calc(200px - 25px);
+            /* calc뒤엔 띄어쓰기X, 빼기연산자 앞,뒤는 한 칸 띄어쓰기 */
+            white-space: nowrap;
+        }
+        .prev{
+            /* left: -79px; */
+            /* right: 100%; */
+            /* 여기서 20px정도 간격을 주고 싶다 */
+            right: calc(100% + 20px);
+        }
+        .next{
+            /* right: -79px; */
+            /* left: 100%; */
+            left: calc(100% + 20px);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Position exercise</h1>
+
+    <div class="slidewrapper">
+        <h2>slide contents</h2>
+        <a href="" class="btn prev">Previous project</a>
+        <a href="" class="btn next">Next project</a>
+    </div>
+</body>
+</html>

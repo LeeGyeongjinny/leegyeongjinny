@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15강 Selector 3</title>
+    <style>
+        a[target] {
+            text-decoration: none;
+        }
+        a[target="_blank"] {
+            background-color: silver;
+        }
+        a[class^="inner"] {
+            font-weight: bold;
+        }
+        .title:hover{
+            color: blue;
+        }
+        .link:hover{
+            background-color: blue;
+            color: #fff;
+        }
+        .link:visited {
+            color: #ebebeb;
+        }
+        :link {
+            text-decoration: none;
+            outline: none;
+        }
+        .link:active{
+            background-color: #000;
+            color: #f00;
+        }
+        .link:focus{
+            background-color: blue;
+            color: #fff;
+        }
+        :link:focus{
+            background-color: blue;
+            color: #fff;
+        }
+        input, button {
+            outline: none;
+        }
+        input:focus, button:focus {
+            border-color: blue;
+            border-width: 3px;
+        }
+        form{
+            border: 2px solid silver;
+            padding: 10px;
+        }
+        form:focus-within {
+            border-color: blue;
+        }
+        .target::before {
+            content: '-';
+        }
+        .target::after {
+            content: '-';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS selector</h1>
+    <h2>속성 선택자</h2>
+    <p>
+        <a href="" class="inner_sm">link</a>
+        <a href="" target="_blank" class="inner_big">NAVER</a>
+        <a href="" target="_blank">Daum</a>
+        <a href="" target="_self">Google</a>
+    </p>
+    <hr>
+    <h2 class="title">의사 클래스 선택자</h2>
+    <a href="" class="link">Link 1</a>
+    <a href="#" class="link">Link 2</a>
+    <form action="">
+        <input type="text">
+        <button>Send</button>
+    </form>
+    <hr>
+    <h2 class="target">의사 요소 선택자</h2>
+</body>
+</html>

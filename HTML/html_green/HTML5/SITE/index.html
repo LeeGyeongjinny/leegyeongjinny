@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11강 레이아웃 Travel</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- 이렇게 링크해놓으면 이 html에서 font-awesome의 icon을 쓸 수 있다 -->
+    <!-- 다운했으니까 다운로드한거 사용해보자(밑에거) -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="slogan">
+            <h2>LOREM IPSUM</h2>
+            <h1>Travel</h1>
+            <p>The inspirational adventures around the world</p>
+        </div>
+    </header>
+    <main>
+        <section class="about_me">
+            <h2 class="sec_tt">About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sit atque fugit nulla voluptates dignissimos, sunt minima sapiente quo debitis enim culpa dolores alias asperiores accusamus. Aut maxime molestias atque.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam omnis reiciendis harum quia fuga, expedita et id eos velit.</p>
+            <p>
+                <a href="" class="btn">read more</a>
+            </p>
+            <img src="./images/about_me.jpg" alt="">
+        </section>
+        <section class="latest_articles">
+            <h2 class="sec_tt">Latest articles</h2>
+            <ul class="latest_articles">
+                <li>
+                    <img src="./images/go_pro.jpg" alt="go_pro">
+                    <h3>Lorem Ipsum Dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatem error ea fugit iste in aspernatur architecto mollitia cumque ut eius eligendi repellat veniam corrupti laborum a laudantium quod nihil.</p>
+                    <a href="">read more <img src="./images/more_arrow.png" alt=""></a>
+                </li>
+                <li>
+                    <img src="./images/iphone_bridge.jpg" alt="bridge">
+                    <h3>Lorem Ipsum Dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatem error ea fugit iste in aspernatur architecto mollitia cumque ut eius eligendi repellat veniam corrupti laborum a laudantium quod nihil.</p>
+                    <a href="">read more <img src="./images/more_arrow.png" alt=""></a>
+                </li>
+                <li>
+                    <img src="./images/iphone_newyork.jpg" alt="newyork">
+                    <h3>Lorem Ipsum Dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatem error ea fugit iste in aspernatur architecto mollitia cumque ut eius eligendi repellat veniam corrupti laborum a laudantium quod nihil.</p>
+                    <a href="">read more <img src="./images/more_arrow.png" alt=""></a>
+                </li>
+            </ul>
+        </section>
+        <section class="contact">
+            <img src="./images/iphone_paris.jpg" alt="paris">
+            <form action="#">
+                <h2 class="sec_tt">Contact</h2>
+                <div class="field">
+                    <label for="username" class="hidden">Your name</label> <!-- your name은 원래 placeholder-->
+                    <input type="text" id="username" name="username" placeholder="Your name">
+                    <label for="useremail" class="hidden">Email</label>
+                    <input type="email" id="useremail" name="username" placeholder="Your email">
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button>Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- fontawesome cdn -->
+        <ul class="social_list">
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

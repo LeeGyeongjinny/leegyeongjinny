@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26강 Absolute - Position</title>
+    <style>
+        .banner{
+            border: 1px solid;
+            padding: 20px;
+            /* position: absolute; */
+            left: 100px;
+            top: 100px;
+            /* left, top 이건 position이 있을 때만 효력있음 */
+        }
+        .test{
+            height: 1000px;
+        }
+        section{
+            /* position: absolute; */
+            left: 100px;
+            top: 200px;
+        }
+        .parent{
+            /* width: 400px; */
+            width: 80%;
+            height: 400px;
+            background-color: #ebebeb;
+            position: relative;
+            margin: 20px auto;
+        }
+        .child{
+            /* width: 100px; */
+
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            text-transform : uppercase;
+            position: absolute; 
+            left: 100%;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position relative</h1>
+    <pre>
+        static : 기본값
+        relative : 요소의 원래 위치를 기준으로 배치
+        absolute : 가까운 부모 중 position 속성의 값이 static이 아닌 요소를 기준으로 배치
+        fixed : 브라우저 윈도우를 기준으로 배치
+        sticky : 스크롤이 생기면 지정한 위치에서 고정됨
+    </pre>
+    <section>
+        <div class="banner">
+            <img src="http://placehold.it/200x200" alt="">
+        </div>
+
+        <h2>Main content</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui impedit odio doloremque dolore nulla, fugiat unde adipisci, at ipsum molestiae nihil eligendi placeat, excepturi tempore! Ullam expedita voluptate doloribus aliquid.</p>
+    </section>
+
+
+    <!-- 
+        1. 요소의 위치를 다른 요소들이 모르게 된다.
+        2. 요소의 크기가 내용의 크기로 축소된다.
+        3. 가까운 부모 중 position속성의 값이 기본값이 아닌 요소를 기준으로 배치된다.
+        4. 기준이 없다면 body요소가 기준이 된다.
+        5. left, right, top, bottom 값으로 위치를 설정한다.
+    -->
+
+    <hr>
+    <div class="parent">
+        <div class="child">child</div>
+    </div>
+    <div class="test">    </div>
+</body>
+</html>

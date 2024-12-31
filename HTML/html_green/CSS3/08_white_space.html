@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19강 white space</title>
+
+    <style>
+        p{
+            width: 60%;
+            border: 1px solid #ccc;
+        }
+
+        p.nowrap {
+            white-space: nowrap;
+        }
+
+        p.pre {
+            white-space: pre;
+        }
+
+        p.pre-wrap {
+            white-space: pre-wrap;
+        }
+        
+        p.pre-line {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>white-space: nowrap;</h2>
+
+    <p class="nowrap">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut quia dolorem sed eius velit quisquam. Totam provident sed numquam nihil vitae. Velit, sunt nesciunt nostrum eaque aliquam quia explicabo perspiciatis.
+    </p>
+
+
+    <h2>white-space: normal;</h2>
+
+    <p class="normal">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut quia dolorem sed eius velit quisquam. Totam provident sed numquam nihil vitae. Velit, sunt nesciunt nostrum eaque aliquam quia explicabo perspiciatis.
+    </p>
+    
+    
+    <h2>white-space: pre;</h2>
+
+    <p class="pre">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        
+        Ut quia dolorem sed eius velit quisquam. Totam provident sed numquam nihil vitae. 
+        
+        
+        Velit, sunt nesciunt nostrum eaque aliquam quia explicabo perspiciatis.
+    </p>
+
+    <h2>white-space: pre-wrap;</h2>
+
+    <p class="pre-wrap">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        
+        Ut quia dolorem sed eius velit quisquam. Totam provident sed numquam nihil vitae. 
+        
+        
+        Velit, sunt nesciunt nostrum eaque aliquam quia explicabo perspiciatis.
+    </p>
+
+    <h2>white-space: pre-line ;</h2>
+
+    <p class="pre-line">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        
+        Ut quia dolorem sed eius velit quisquam. Totam provident sed numquam nihil vitae. 
+        
+        
+        Velit, sunt nesciunt nostrum eaque aliquam quia explicabo perspiciatis.
+    </p>
+</body>
+</html>

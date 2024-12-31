@@ -1,0 +1,34 @@
+.bx-wrapper{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 2px solid silver;
+}
+.slide {
+    height: 300px;
+}
+#desc{
+    color: silver !important;
+}
+#desc{
+    color: #3498db !important;
+}
+.main-content p{
+    color: red;
+}
+.main-content p{
+    color: black;
+}
+p{
+    color: blue; 
+}
+p{
+    color: green;
+}
+
+section h2{
+    font-size: 40px;
+    /* font-style, font-weight... */
+}
+section h2{
+    font: bold;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15강 Selector 4</title>
+    <style>
+        ul li:first-child,
+        ul li:last-child {
+            text-decoration: underline;
+        }
+        ul li:nth-child(3) {
+            text-decoration: underline;
+        }
+         /* 짝수 */
+        /* li:nth-child(2n) {
+            background-color: aqua;
+        } */
+        /* li:nth-child(even) {
+            background-color: aqua;
+        } */
+        /* 홀수 */
+        /* li:nth-child(2n+1) {
+            background-color: yellowgreen;
+        }  */
+        /* li:nth-child(odd) {
+            background-color: yellowgreen;
+        }  */
+        /* li:nth-child(n+3) {
+            background-color: silver;
+        } */
+        /* li:nth-child(-n+5) {
+            background-color: yellowgreen;
+        } */
+        li:nth-child(n+3):nth-child(-n+5) {
+            background-color: yellowgreen;
+        }
+        h3:first-of-type{
+            background-color: silver;
+        }
+        h3:nth-of-type(2n){
+            background-color: aquamarine;
+        }
+        h3:last-of-type{
+            background-color: yellow;
+        }
+        input:disabled {
+            border-color: red;
+        }
+        input:checked {
+            background-color: red;
+        } /*이건 의미 없음*/
+        input:checked + label {
+            background: silver;
+        }
+        section *:not(h2) {
+            color: green;
+        }
+        .list li:not(:first-child) {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS selector</h1>
+    <h2>일반 구조 선택자</h2>
+    <ul>
+        <li>list item1</li>
+        <li>list item2</li>
+        <li>list item3</li>
+        <li>list item4</li>
+        <li>list item5</li>
+        <li>list item6</li>
+    </ul>
+    <hr>
+    <h2>형태 구조 선택자</h2>
+    <h3>subtitle</h3>
+    <h3>subtitle</h3>
+    <h3>subtitle</h3>
+    <div>container</div>
+    <h3>subtitle</h3>
+    <h3>subtitle</h3>
+    <hr>
+    <h3>상태 선택자</h3>
+    <form action="">
+        <input type="text" disabled> 
+        <input type="text">
+        <input type="radio" id="radio"><label for="radio">radio</label>
+        <input type="checkbox" id="check"><label for="check">check</label>
+        <button type="submit" disabled>전송</button>
+        <button type="reset">초기화</button>
+        <!-- disabled : 클릭 안됨 -->
+    </form>
+    <h3>부정 선택자</h3>
+    <section>
+        <h2>section title</h2>
+        <p>description</p>
+        <a href="">read more</a>
+        <img src="http://placehold.it/100x100" alt="">
+    </section>
+    <ul class="list">
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestias possimus nisi explicabo illum numquam at, reprehenderit ad exercitationem quam maiores dolorem? Rerum ut voluptas totam expedita quaerat corrupti possimus.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta molestias possimus nisi explicabo illum numquam at, reprehenderit ad exercitationem quam maiores dolorem? Rerum ut voluptas totam expedita quaerat corrupti possimus.
+
+    </p>
+</body>
+</html>

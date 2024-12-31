@@ -1,0 +1,80 @@
+header span {
+    color: rgb(186, 11, 221);
+}
+
+header > span {
+    color: rgb(145, 30, 30);
+}
+
+header + span {
+    font-size: 2rem;
+}
+
+header ~ p {
+    color: red;
+}
+
+[target] {
+    color: greenyellow;
+}
+
+[target=_blank] {
+    color: #35cdf3;
+}
+
+[class ~= att_class] {
+    color: red;
+}
+
+[class |= att] {
+    color: yellowgreen;
+}
+
+[class ^=co] {
+    color: rgb(238, 92, 226);
+}
+
+[class $= na] {
+    color: yellow;
+}
+
+[class *= ok] {
+    color: black;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover, h1:hover {
+    color:aqua;
+}
+
+a:active {
+    font-size: 5rem;
+}
+
+p {
+    display: none;
+}
+
+h1:hover + p{
+    display: block;
+}
+
+input:focus {
+    border: 5px dotted orange;
+    outline: none;
+}
+
+input:checked + label {
+    background-color: cadetblue;
+}
+
+#p1:target {
+    background-color: bisque;
+}

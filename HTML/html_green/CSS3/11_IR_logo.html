@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22강 IR 기법</title>
+    <style>
+        h1 a {
+            background: url('img/logo.png') no-repeat;
+            width: 87px;
+            height: 87px;
+            text-indent: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            /* h1 태그에다가 이렇게까지만 하면 이미지첨부, 글자사라짐까지만 되고 이미지 클릭은 안됨 */
+            /* h1 a {} 이렇게 해야함 */
+            display: block;
+        }
+        ul li {
+            list-style: none;
+            display: inline-block;
+        }
+        ul li a{
+            background: url(img/sprite_icons.png) no-repeat;
+            /* 크기는 포토샵파일로 알아야한다 */
+            width: 42px;
+            height: 42px;
+            display: block;
+            /* 텍스트를 왼쪽으로 아주 멀리 보내서 화면에서 없애자 */
+            text-indent: -9999em;
+        }
+        ul li:nth-child(2) a{
+            /* background-position: -53px 0; */
+            background-position-x: -53px;
+            background-position-y: 0;
+        }
+        ul li:nth-child(3) a{
+            background-position: -104px 0;
+        }
+        ul li:nth-child(4) a{
+            background-position: 100% 0;
+        }
+        /* 마지막은 x축의 끝부분에 있는걸로 계산해서 하자 */
+        /* ul li:nth-child(1) a:hover{
+            background-position: 0 -52px;
+        }
+        ul li:nth-child(2) a:hover{
+            background-position: -53px -52px;
+        }
+        ul li:nth-child(3) a:hover{
+            background-position: -104px -52px;
+        }
+        ul li:nth-child(4) a:hover{
+            background-position: 100% -52px;
+        } */
+
+        /* upgrade version */
+
+        ul li a:hover{
+            background-position-y: -52px;
+        }
+        /* 이렇게 y값만 변경해 주면 된다 */
+    </style>
+</head>
+<body>
+    <h1><a href="index.html">Sharp logo</a></h1>
+
+    <hr>
+    <ul>
+        <li><a href="">Add Member</a></li>
+        <li><a href="">Mail to Member</a></li>
+        <li><a href="">Member information</a></li>
+        <li><a href="">Delete Member</a></li>
+    </ul>
+</body>
+</html>

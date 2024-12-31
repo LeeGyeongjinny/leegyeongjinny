@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19강 list style</title>
+
+    <style>
+        nav > ul > li {
+            list-style-type: square;
+        }
+        nav > ul > li > ul > li {
+            list-style-type: disc;
+        }
+
+        nav ul ul ul li {
+            list-style-type: decimal;
+            /* li
+            st-style: ; 이렇게 적어도 됨*/
+        }
+        ol{
+            /* list-style-type: '-'; */
+            list-style-type: '\1F44D';
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>menu</li>
+            <li>menu
+                <ul>
+                    <li>sub menu</li>
+                    <li>sub menu
+                        <ul>
+                            <li>sub menu2</li>
+                            <li>sub menu2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>menu</li>
+            <li>menu</li>
+        </ul>
+    </nav>
+    <hr>
+    <ol>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+    </ol>
+    <hr>
+    <ul class="menu">
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+    </ul>
+
+    <p>
+        &#128077;
+    </p>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27강 Position exercise3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .mainmenu{
+            background-color: #333;
+            padding-left: 40px;
+        }
+        .mainmenu ul{
+            background-color: #666;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+        .mainmenu::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .mainmenu > li {
+            float: left;
+            list-style: none;
+            margin-right: 30px;
+            line-height: 35px;
+            color: #fff;
+            position: relative;
+        }
+        .mainmenu > li ul li{
+            padding: 0 10px;
+            white-space: nowrap;
+        }
+        .mainmenu> li:hover ul{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="mainmenu">
+        <li>About Us
+            <ul>
+                <li>ceo greeting</li>
+                <li>history</li>
+                <li>vision</li>
+            </ul>
+        </li>
+        <li>Works
+            <ul>
+                <li>Design</li>
+                <li>Mobile</li>
+            </ul>
+        </li>
+        <li>Services</li>
+        <li>Location</li>
+    </ul>
+</body>
+</html>

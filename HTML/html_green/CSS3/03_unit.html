@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13강 Unit</title>
+    <style>
+        .px {
+            width : 200px;
+            background-color:silver;
+        }
+        .px-parent {
+            width : 300px;
+            background-color:silver;
+        }
+        .px-child {
+            width : 100px;
+            background-color: #ebebeb;
+        }
+        .percent {
+            width : 50%;
+            background-color: green;
+            color : #fff;
+        }
+        .percent-parent {
+            width : 50%;
+            background-color: silver;
+        }
+        .percent-child {
+            width : 50%;
+            background-color: blue;
+            color : #fff;
+        }
+        body {
+            font-size: 16px;
+        }
+        section {
+            font-size:20px;
+        }
+        section h2 {
+            font-size:1.5em; /* 20x1.5em = 30px */
+        }
+        section p {
+            font-size:1.5em; /* 20x1.5em = 30px */
+        }
+        section em {
+            font-size:1.5em; /* 부모인 p태그가 30px x 1.5 = 45px*/
+        }
+        article {
+            font-size: 50px;
+        }
+        :root {
+            font-size: 20px;
+        }
+        article h2 {
+            font-size: 1.5rem; /* 기준이 root */
+        }
+        article p {
+            font-size: 1.5rem;
+        }
+        article em {
+            font-size: 1.5rem;
+        }
+        /* 
+        html {
+            height : 100%;
+        }
+        body {
+            height : 100%;
+        }
+        */
+        .vw {
+            width: 50vw;
+            /* width: 100%; */
+            background-color: green;
+            height: 100vh; /* 100% :부모가 지정해준 영역의 percent*/
+            /* vw, vh를 height, width에도 각각 쓸 수 있다 */
+        }
+    </style>
+</head>
+<body>
+    <!--  
+    <h1>단위</h1>
+    <h2 class="px">px</h2>
+    <div class="px-parent">
+        parent 
+        <div class="px-child">child</div>
+    </div>
+    <hr>
+    <pre>horizontal rule</pre>
+    <h2 class="percent">percent</h2>
+    <pre>부모 요소가 만들어준 공간에서 비율</pre>
+    <div class="percent-parent">
+        parent 
+        <div class="percent-child">child</div>
+    </div>
+    <hr>
+    <h2>em</h2>
+    <pre>
+        em 단위가 쓰여진 곳의 폰트 사이즈의 배수
+    </pre>
+    <section>
+        <h2>section title</h2>
+        <p>
+            <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit. Iure nam quaerat doloribus reiciendis. Laboriosam dolore debitis quam qui pariatur quas nihil omnis, a dolor id, earum mollitia accusantium obcaecati fugiat.
+        </p>
+    </section>
+
+    <h2>rem</h2>
+    <pre>
+        r = root = 문서의 기본값 16px
+    </pre>
+    <article>
+        <h2>article title</h2>
+        <p>
+            <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit. Quia, minus ratione? Maiores fugit officia possimus libero inventore, consequuntur laboriosam voluptas placeat molestias cum obcaecati, maxime doloribus voluptatibus modi mollitia totam!
+        </p>
+    </article>
+    <hr>
+    <h2>vw</h2>
+    <pre>
+        v = viewport
+    </pre>
+    -->
+    <div class="vw">vw</div>
+
+
+
+    <!-- 
+        <h2>vh</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure veritatis fuga iusto nobis mollitia, atque molestias provident perspiciatis earum libero at voluptas cupiditate aperiam ad ipsa soluta hic vero nulla.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure veritatis fuga iusto nobis mollitia, atque molestias provident perspiciatis earum libero at voluptas cupiditate aperiam ad ipsa soluta hic vero nulla.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure veritatis fuga iusto nobis mollitia, atque molestias provident perspiciatis earum libero at voluptas cupiditate aperiam ad ipsa soluta hic vero nulla.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure veritatis fuga iusto nobis mollitia, atque molestias provident perspiciatis earum libero at voluptas cupiditate aperiam ad ipsa soluta hic vero nulla.</p>
+    -->
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+    <title>10강 Multimedia</title>
+</head>
+<body>
+    <h1>Multimedia</h1>
+
+    <h2>Video</h2>
+    <!--
+        controls : 제어 UI (재생바 나오게)
+        autoplay : 자동재생
+        muted : 음소거
+        폴백 컨텐츠 : 비디오가 재생 안되는 환경에서 img태그의 alt와 같은 기능 
+        mp4, ogv, webM
+        poster 재생 전 화면 표시(썸네일)
+        loop : 반복재생
+    -->
+    <!-- <video src="./video/yawning giant rabbit.mp4" controls autoplay muted>
+        <p>비디오 입니다.</p>
+    </video> -->
+    <video controls autoplay muted poster="./images/yawing giant rabbit.jpg.png" loop> <!-- ogv, webM (여기서 확장자명 바꾸는게 아니라 실제 파일도 바꿔줘야함) -->
+        <source src="./video/yawning giant rabbit.mp4" type="video/mp4" />
+        <source src="./video/yawning giant rabbit.ogv" type="video/ogv" />
+        <source src="./video/yawning giant rabbit.webM" type="video/webM" />
+        <p>이 브라우저는 영상을 지원하지 않습니다.</p>
+    </video>
+    <!-- 크롬, 파폭은 no_sound파일이면 autoplay, muted 없어도 자동재생 -->
+
+    <h2>Audio</h2>
+
+    <!-- <audio src="./audio/Honey Bee.mp3" controls></audio> -->
+
+    <audio>
+        <source src="./audio/Honey Bee.mp3" type="audio/mpeg">
+        <source src="./audio/Honey Bee.ogg" type="audio/ogg">
+        <p>이 브라우저는 소리를 지원하지 않습니다.</p>
+
+    </audio>
+
+    <!-- cloudinary.com 외부 트래픽 서버 -->
+    <!--
+        여기서 동영상을 직접 올리면 서버트래픽보다 초과할시? 문제생김
+        그래서 cloudinary에서 영상 올려서 파일 url copy해서 src=""여기에 절대경로 올려서 해결
+        나오는 건 똑같이 나옴
+    -->
+    
+    <h2>Youtube</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5qnD8Th48-g?si=l7jfqyZvrW2UDUzA&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="315" source="https://eztoweb.maru.net" height="560"></iframe>
+
+    <!-- vimeo.com -->
+    <h2>Vimeo</h2>
+
+    <iframe src="https://player.vimeo.com/video/440193219? h=cb45d17538&title&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreenl picture-in-picture" alllowfullscreen></iframe>
+    
+
+
+</body>
+</html>

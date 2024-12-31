@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21강 display</title>
+    <style>
+        span{
+            width: 50%;
+            display: block;
+            background-color: green;
+            color: #fff;
+        }
+        .box{
+            width: 50%;
+            background-color: #3498db;
+            color: #fff;
+            display: inline;
+        }
+
+        img{
+            width: 150px;
+            display: inline;
+        }
+        p{
+            text-align: center;
+        }
+        .menu{
+            text-align: center;
+        }
+        .menu li{
+            width: 150px;
+            padding: 10px;
+            background: #ebebeb;
+            line-height: 60px;
+            list-style: none;
+            text-align: center;
+            display: inline-block;
+        }
+        .portfolio{
+            background: #ebebeb;
+            padding: 0;
+            display: table;
+            width: 100%;
+        }
+        .portfolio li{
+            width: 33.3333%;
+            background-color: silver;
+            list-style: none;
+            display: table-cell;
+        }
+        h2{
+            display: none;
+        }
+        h3{
+            visibility: hidden;
+        }
+        h4{
+            opacity: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Display</h1>
+        <h2>Heading</h2>
+        <h3>Visibility</h3>
+        <h4>Opacity</h4>
+    </header>
+
+    <div class="box">block level element</div>
+    <div class="box">block level element</div>
+    <span>inline level element</span>
+    <span>inline level element</span>
+
+    <hr>
+
+    <p>
+        <img src="http://placehold.it/100x100" alt="">
+        <img src="http://placehold.it/100x100" alt="">
+    </p>
+
+    <hr>
+
+    <ul class="menu">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+    </ul>
+
+    <ul class="portfolio">
+        <li>portfolio item1</li>
+        <li>portfolio item2</li>
+        <li>portfolio item3</li>
+    </ul>
+</body>
+</html>

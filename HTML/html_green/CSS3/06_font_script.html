@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17강 Font-script</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Pushster', 'cursive', 'NanumGothic:400,800']
+            }
+        });
+    </script>
+
+    <style>
+        body{
+            font-family: 'NanumGothic', sans-serif;
+            font-weight: 800;
+        }
+        .target{
+            font-family: 'Pushster', cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>폰트 적용하기</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis provident fuga veritatis, amet voluptatem alias ex inventore hic vel velit mollitia, molestias facere culpa quo ut, itaque vitae nobis quis?
+    </p>
+    <p class="target">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, optio! Sint praesentium esse veritatis qui harum. Temporibus, voluptate. Quia et excepturi odit error quae doloremque architecto minima sint atque! Quibusdam?
+    </p>
+</body>
+</html>  

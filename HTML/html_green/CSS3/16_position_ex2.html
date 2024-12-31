@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27강 Position exercise2</title>
+    <style>
+        .answer{
+            background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/485050/positon_btn_final.png) no-repeat;
+            width: 363px;
+            height: 197px;
+            margin-bottom: 50px;
+        }
+        .latest-news{
+            width: 300px;
+            padding: 20px;
+            border: 2px solid #ccc;
+            margin-top: 50px;
+            position: relative;
+        }
+        .read-more{
+            position: absolute;
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            right: 0;
+            bottom: calc(100% + 10px);
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="answer"></div>
+    <div class="latest-news">
+        <ul>
+            <li>리스트 1</li>
+            <li>리스트 2</li>
+            <li>리스트 3</li>
+            <li>리스트 4</li>
+            <li>리스트 5</li>
+        </ul>
+        <a href="#s" class="read-more">Read more</a>
+        <!-- a태그가 li위에 있으면 안됨 웹표준 어김 -->
+    </div>
+</body>
+</html>

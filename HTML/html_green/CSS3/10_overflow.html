@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21강 overflow</title>
+
+    <style>
+        div{
+            width: 400px;
+            border: 1px solid #ebebeb;
+        }
+        div p{
+            width: 450px;
+        }
+        .auto{
+            overflow: auto;
+        }
+        /* auto : 넘치는 부분만 스크롤 생김 */
+        .hidden{
+            overflow: hidden;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        /* scroll : 넘침과 관계없이 일단 양쪽 다 스크롤 생김 */
+        .xaxis{
+            overflow-x: hidden;
+        }
+        /* auto, hidden, visible 가능 */
+        .yaxis{
+            overflow-y: scroll;
+            height: 80px;
+            /* overflow: scroll; */
+            /* overflow-x: hidden; */
+        }
+        .yaxis p{
+            width: auto;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>overflow</h1>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde incidunt voluptas! Itaque nostrum ex natus alias qui in error, maxime inventore consectetur! Quaerat sunt voluptatum assumenda perferendis, dignissimos recusandae!
+        </p>
+    </div>
+
+    <h2>auto</h2>
+
+    <div class="auto">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut, veniam possimus perferendis nesciunt nostrum iste impedit iure obcaecati ipsam doloremque alias temporibus neque! Unde commodi quo est voluptate laborum.
+        </p>
+    </div>
+
+    <h2>hidden</h2>
+
+    <div class="hidden">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut, veniam possimus perferendis nesciunt nostrum iste impedit iure obcaecati ipsam doloremque alias temporibus neque! Unde commodi quo est voluptate laborum.
+        </p>
+    </div>
+
+    <h2>scroll</h2>
+
+    <div class="scroll">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut, veniam possimus perferendis nesciunt nostrum iste impedit iure obcaecati ipsam doloremque alias temporibus neque! Unde commodi quo est voluptate laborum.
+        </p>
+    </div>
+
+    <h2>overflow-x</h2>
+
+    <div class="xaxis">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut, veniam possimus perferendis nesciunt nostrum iste impedit iure obcaecati ipsam doloremque alias temporibus neque! Unde commodi quo est voluptate laborum.
+        </p>
+    </div>
+
+    <h2>overflow-y</h2>
+
+    <div class="yaxis">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut, veniam possimus perferendis nesciunt nostrum iste impedit iure obcaecati ipsam doloremque alias temporibus neque! Unde commodi quo est voluptate laborum.
+        </p>
+    </div>
+</body>
+</html>

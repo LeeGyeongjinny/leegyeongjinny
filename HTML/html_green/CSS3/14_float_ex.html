@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25강 Float Exercise 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .portfolio_list,
+        .portfolio_list2{
+            width: 860px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: green;
+        }
+        .portfolio_list li
+        ,.portfolio_list2 li{
+            float: left;
+            list-style-type: none;
+            /* margin-right: 20px; */
+        }
+        /* .portfolio_list li:last-child{
+            margin-right: 0;
+        } */
+        /* .portfolio_list li+li{
+            margin-left: 20px;
+        } */
+        /* li뒤의 li의 왼쪽에 마진을 주면 마지막요소 오른쪽마진0 안줘도 한꺼번에 해결! */
+        .portfolio_list li:not(:last-child){
+            margin-right: 20px;
+        }
+        /* 아니면 마지막요소빼고 오른쪽마진만 줘도 된다 */
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .portfolio_list2 li{
+            margin-right: 20px;
+        }
+        /* .portfolio_list2 li:not(:last-child){
+            margin-right: 20px;
+        } */
+        /* .portfolio_list2 li:nth-child(4)
+        ,.portfolio_list2 li:nth-child(8){
+            margin-right: 0;
+        } */ 
+        .portfolio_list2 li:nth-child(4n){
+            margin-right: 0;
+        } /* 4n : 4번째마다 */
+
+
+        header{
+            width: 1130px;
+            margin: 0 auto;
+            background-color: #ebebeb;
+        }
+        header h1{
+            float: left;
+            line-height: 70px;
+        }
+        header nav{
+            float: right;
+            /* width: 400px; */
+            /* float은 자동으로 안의 요소만큼 인지해서 정렬되니까 굳이 width 안잡아줘도됨 */
+        }
+        /* header nav ul li{
+            float: right;
+        } */ /* 이렇게 하면 역순으로 우측정렬됨 */
+        header nav ul li{
+            float: left;
+            list-style-type: none;
+            margin-left: 20px;
+            line-height: 70px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Portfolio List</h1>
+    <ul class="portfolio_list clearfix">
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+    </ul>
+    <br>
+    <ul class="portfolio_list2 clearfix">
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+        <li><img src="http://placehold.it/200x200" alt=""></li>
+    </ul>
+    <hr>
+    <header class="clearfix">
+        <h1><a href="">Logo</a></h1>
+        <nav>
+            <ul class="clearfix">
+                <li><a href="">Login</a></li>
+                <li><a href="">Member Join</a></li>
+                <li><a href="">Sitemap</a></li>
+                <li><a href="">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>content</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus omnis deserunt cum placeat quas sit ad vel iure debitis reiciendis quaerat cumque harum, veritatis ex assumenda. Quis reprehenderit hic dicta?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus omnis deserunt cum placeat quas sit ad vel iure debitis reiciendis quaerat cumque harum, veritatis ex assumenda. Quis reprehenderit hic dicta?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus omnis deserunt cum placeat quas sit ad vel iure debitis reiciendis quaerat cumque harum, veritatis ex assumenda. Quis reprehenderit hic dicta?</p>
+    </main>
+</body>
+</html>

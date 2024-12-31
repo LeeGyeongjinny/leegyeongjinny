@@ -1,0 +1,11 @@
+.grad-1 {
+    background: linear-gradient(to right bottom, blue, white);
+    width: 300px;
+    height: 300px;
+}
+
+.grad-2 {
+    background: linear-gradient(45deg, #f00, #fff);
+    width: 300px;
+    height: 300px;
+}

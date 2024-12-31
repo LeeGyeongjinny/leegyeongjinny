@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4강 List</title>
+</head>
+<body>
+    <h2>List</h2>
+    <h2>Unordered List 비순차 목록</h2>
+    <ul>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ul>
+    <hr>
+    <!-- 주의 사항 -->
+    <ul>
+        <li>list item</li>
+    </ul>
+    <ul>
+        <li>list item</li>
+    </ul>
+    <hr>
+    <p>ul의 자식 요소로 다른 요소가 올 수 없습니다.</p>
+    <ul>
+        <h3>title</h3> <!-- 오류 -->
+        <li>list item</li>
+    </ul>
+
+    <ul> <!-- 이건 문제 없음 -->
+        <li>
+            <h3>title</h3>
+            <p>lorem ipsum</p>
+        </li>
+        <li>
+            <h3>title</h3>
+            <p>lorem ipsum</p>
+        </li>
+    </ul>
+
+    <h2>Ordered List 순차 목록</h2>
+    <ol>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ol>
+
+    <h2>Definition List 정의 목록</h2>
+    <dl>
+        <dt>definition term 정의 용여명, 제목</dt>
+        <dd>definition description 설명</dd>
+        <dd>definition description 설명</dd>
+        <dd>definition description 설명</dd>
+    </dl>
+    <hr>
+    <dl> <!-- 이건 문제 없음 -->
+        <dt>definition term 정의 용여명, 제목</dt>
+        <dd>definition description 설명</dd>
+        <dt>definition term 정의 용여명, 제목</dt>
+        <dd>definition description 설명</dd>
+    </dl>
+    <dl> <!-- 오류 제목 밑엔 반드시 설명 있어야한다. -->
+        <dt>definition term 정의 용여명, 제목</dt>
+        <dt>definition term 정의 용여명, 제목</dt>
+        <dd>definition description 설명</dd>
+    </dl>
+</body>
+</html>

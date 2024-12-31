@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23강 Box Model</title>
+    <style>
+        .box{
+            width: 500px;
+            
+        }
+        .padding{
+            padding: 20px;
+        }
+        .border{
+            border: 10px solid silver;
+        }
+        .margin{
+            margin: 10px;
+        }
+        .bg{
+            background-color: green;
+            color: #fff;
+        }
+        .content-box{
+            box-sizing: content-box;
+        }
+        .border-box{
+            box-sizing: border-box;
+        }
+        .box2{
+            /* border: 10px solid green; */
+
+            /* border-width: 10px 30px 50px 5px; */
+            /* border-width: 0;
+            border-top-width: 10px; */
+            
+            border-style: solid;
+            border-color: green;
+
+            width: 500px;
+            /* padding: 10px 50px 100px 20px; */
+            /* padding: 0 50px 0 0; */
+            /* padding-right: 50px; */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <h2>content</h2>
+
+    <div class="box box2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatibus excepturi similique blanditiis provident, minus, ad necessitatibus explicabo unde amet magnam recusandae cupiditate quod ab! Ad consectetur pariatur facilis distinctio?
+        </p>
+    </div>
+
+    <hr>
+    <div class="box conetnt">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt similique impedit, laborum modi tenetur veniam odio minus. Dolorum quo eum tempore recusandae dolorem odit blanditiis laboriosam adipisci ea perferendis!
+        </p>
+    </div>
+    <div class="box padding">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt similique impedit, laborum modi tenetur veniam odio minus. Dolorum quo eum tempore recusandae dolorem odit blanditiis laboriosam adipisci ea perferendis!
+        </p>
+    </div>
+    <div class="box padding border">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt similique impedit, laborum modi tenetur veniam odio minus. Dolorum quo eum tempore recusandae dolorem odit blanditiis laboriosam adipisci ea perferendis!
+        </p>
+    </div>
+    <div class="box padding border margin">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt similique impedit, laborum modi tenetur veniam odio minus. Dolorum quo eum tempore recusandae dolorem odit blanditiis laboriosam adipisci ea perferendis!
+        </p>
+    </div>
+    <div class="box padding border margin bg">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt similique impedit, laborum modi tenetur veniam odio minus. Dolorum quo eum tempore recusandae dolorem odit blanditiis laboriosam adipisci ea perferendis!
+        </p>
+    </div>
+    <hr>
+    <div class="box padding border margin content-box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt similique impedit, laborum modi tenetur veniam odio minus. Dolorum quo eum tempore recusandae dolorem odit blanditiis laboriosam adipisci ea perferendis!
+        </p>
+    </div>
+    <div class="box padding border margin border-box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt similique impedit, laborum modi tenetur veniam odio minus. Dolorum quo eum tempore recusandae dolorem odit blanditiis laboriosam adipisci ea perferendis!
+        </p>
+    </div>
+</body>
+</html>

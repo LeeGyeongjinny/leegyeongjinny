@@ -1,0 +1,62 @@
+.div-box1 {
+    border: 1px solid #000;
+    width: 500px;
+    height: 15%;
+    background-color: black;
+}
+
+.div-box2 {
+    border: 1px solid lightgray;
+    width: 500px;
+}
+.div-box3 {
+    background: black;
+    color: white;
+}
+
+.div-box4 {
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.title-apple {
+    color: white;
+}
+
+.title-apples {
+    color: orange;
+}
+
+h2 {
+    color: red;
+}
+
+.span-color {
+    color: blue;
+}
+
+
+
+
+.line {
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.div-1 {
+    width: 150px;
+    height: 150px;
+}
+
+.div-1 {
+    width: 30%;
+    height: 30%;
+}
+
+.div-3-1 {
+    border: 1px solid black;
+    border-style: dotted;
+}
+.small-dog {
+    font-size: 10px;
+}

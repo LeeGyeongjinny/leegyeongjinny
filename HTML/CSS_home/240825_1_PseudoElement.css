@@ -1,0 +1,101 @@
+/* .required::before {
+    content: '*';
+    color: red;
+}
+
+.required::after {
+    content: '*';
+    color: red;
+}
+
+p::first-line {
+    color: red;
+} */
+/* 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin:0;
+    padding: 5px 10px;
+    background-color: #c5c3c3;
+    border: 1px solid #a7ee19;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container :not(last-child) a:hover {
+    background-color: #4d4d4d;
+}
+
+
+.container :last-child a:hover  {
+    background-color: #ff0000;
+    color: #ffffff;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    background-image: url(../img/you_usa_guy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.required::before{
+    content: '*';
+    color: red;
+}
+legend {
+    color: #fa54b5;
+}
+ul {
+    list-style-type: none; 
+}
+
+input:focus {
+    border: 3px solid #ff0000;
+    outline: none;
+}
+
+input, textarea {
+    background-color: transparent;
+}
+
+input:checked + label {
+    color: #ff0000;
+}
+textarea:focus {
+    outline: none;
+    border: 3px solid #ff0000;
+}
+
+a{
+    text-decoration: none;
+}
+p {
+    display: none;
+    background-color: black;
+    color: #ffffff;
+}
+button:hover + p{
+    display: inline-block;
+}

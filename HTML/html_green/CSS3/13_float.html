@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13강 Float</title>
+    <style>
+        h1{
+            float: right;
+        }
+        span{
+            width: 300px; 
+            background: #ccc;
+            float: right;
+        }
+        img{
+            float: left;
+        }
+        .clear{
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Float</h1>
+    <hr>
+    <span>inline element</span>
+    <hr>
+    <img src="http://placehold.it/100x100" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br class="clear">Tenetur nobis vel possimus numquam omnis quo quibusdam tempore totam blanditiis quod consectetur repellendus, ratione ducimus, exercitationem a incidunt ullam voluptas consequuntur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis vel possimus numquam omnis quo quibusdam tempore totam blanditiis quod consectetur repellendus, ratione ducimus, exercitationem a incidunt ullam voluptas consequuntur.</p>
+
+    <!--
+        - FLOAT이 적용된 요소가 해당 방향으로 이동한다.
+        - FLOAT이 적용된 요소의 크기는  content의 크기만큼 인지된다.
+        - FLOAT이 적용된 요소를 뒤따라 오는 요소들이 감싼다.
+        - 자식 요소 모두 플롯이 적용되면, 부모요소의 높이가 잡히지 않는다.
+        - 감싸는 속성을 해지(clear)해야 뒤의 요소들을 다시배치할 수 있다.
+        - 감싸는 속성을 해지(clear)해야 자식요소의 높이를 부모요소가 인지한다.
+    -->
+
+    <hr>
+    <p class="images">
+        <img src="http://placehold.it/100x100" alt="">
+        <img src="http://placehold.it/100x100" alt="">
+        <img src="http://placehold.it/100x100" alt="">
+    </p>
+    <hr>
+    <ul>
+        <li>
+            <a href="">menu1</a>
+        </li>
+        <li><li href="">menu2</li
+            ></li>
+        <li><a href="">menu3</a>
+        </li>
+    </ul>
+</body> 
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26강 Relative - Position</title>
+    <style>
+        .relative{
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position relative</h1>
+    <pre>
+        static : 기본값
+        relative : 요소의 원래 위치를 기준으로 배치
+        absolute : 가까운 부모 중 position 속성의 값이 static이 아닌 요소를 기준으로 배치
+        fixed : 브라우저 윈도우를 기준으로 배치
+        sticky : 스크롤이 생기면 지정한 위치에서 고정됨
+    </pre>
+    <figure class="relative">
+        <img src="http://placehold.it/200x200" alt="">
+        <figcaption>image description</figcaption>
+    </figure>
+
+    <figure>
+        <img src="http://placehold.it/200x200" alt="">
+        <figcaption>image description</figcaption>
+    </figure>
+
+    <!-- 
+        relative
+        1. 위치와 크기가 변하지 않는다.
+        2. 현재 위치를 기준으로 left, right, top, bottom 값으로 위치를 조정한다.
+        3. left, right, top, bottom 값으로 움직이는 것은 가상의  움직임으로 다른 요소들의 위치에 영향을 주지 않는다.
+    -->
+</body>
+</html>

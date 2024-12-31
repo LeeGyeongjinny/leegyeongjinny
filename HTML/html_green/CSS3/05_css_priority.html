@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16강 CSS priority</title>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    
+    <link rel="stylesheet" href="05.css">
+
+    <script>
+        $(document).ready(function(){
+            $(".slide_contatiner").bxSlider();
+        });
+    </script>
+
+</head>
+<body>
+    <h1>CSS 우선순위</h1>
+    <pre>
+        우선순위 점수표
+        * 0
+        tag 1
+        class 10
+        id 100
+        inline style 1,000
+        ! important 10,000
+    </pre>
+    <section class="main-content">
+        <h2>section title 1</h2>
+        <p id="desc" style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit dolorem porro vero molestiae suscipit repellat corrupti, dolores   sit amet consectetur adipisicing elit. Quasi reprehenderit dolorem porro vero molestiae suscipit repellat corrupti, dolores animi quas at ea nihil iure ab natus eligendi, ipsam perferendis modi?z</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit dolorem porro vero molestiae suscipit repellat corrupti, dolores   sit amet consectetur adipisicing elit. Quasi reprehenderit dolorem porro vero molestiae suscipit repellat corrupti, dolores animi quas at ea nihil iure ab natus eligendi, ipsam perferendis modi?z</p>
+    </section>
+    <section>
+        <h2>section title 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit dolorem porro vero molestiae suscipit repellat corrupti, dolores animi quas at ea nihil iure ab natus eligendi, ipsam perferendis modi?z</p>
+    </section>
+    <hr>
+
+    <div class="slide_wrapper">
+        <div class="slide_contatiner">
+            <div class="slide">slide 1</div>
+            <div class="slide">slide 2 </div>
+            <div class="slide">slide 3</div>
+            <div class="slide">slide 4</div>
+        </div>
+    </div>
+
+</body>
+</html>

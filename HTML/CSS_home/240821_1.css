@@ -1,0 +1,13 @@
+.box {
+    border: 1px solid #000;
+    width: 500px;
+}
+.ui_title {
+    list-style-type: none;
+    line-height: 2rem;
+}
+.list_title {
+    color: #ad3000;
+    font-size: 1.5em;
+    font-weight: 900;
+}
