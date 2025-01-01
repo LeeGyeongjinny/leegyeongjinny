@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_bucket.css">
+    <title>Bucket List Detail</title>
+</head>
+<body>
+    <header>
+        <div class="head-title">
+            <a href="./bucketlist.html"><h1>Travels<span>_버킷리스트 상세</span></h1></a>
+        </div>
+        <div class="btn-header">
+            <a href="./bucket_update.html"><button type="button" class="btn-header-css">수정</button></a>
+            <a href="./bucketlist.html"><button type="button" class="btn-header-css">취소</button></a>
+            <a href="./bucket_delete.html"><button type="button" class="btn-header-css">삭제</button></a>
+        </div>
+    </header>
+    <main>
+        <div class="bucket-board-grid">
+            <div class="main-board">
+                <div class="main-title bucket-title-content">
+                    <div>올랜도 디즈니랜드</div>
+                </div>
+                <div>
+                    <textarea readonly name="bucketlist" id="bucketlist"  class="detail-content">올랜도 디즈니랜드 가기</textarea>
+                </div>
+            </div>
+            <div class="bucket-right">
+                <div class="bucket-right-top">
+                    <div class="bucket-right-align">
+                        <label for="country" class="top-left">국가</label>
+                        <div name="country" id="country" class="top-right">미국</div>
+                    </div>
+                    <div class="bucket-right-align">
+                        <label for="sort" class="top-left">분류</label>
+                        <select name="sort" id="sort" class="top-right">
+                            <option value="관광">관광</option>
+                            <option value="먹방">먹방</option>
+                            <option value="쇼핑">쇼핑</option>
+                            <option value="체험">체험</option>
+                            <option value="기타">기타</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bucket-right-bottom">
+                    <div class="main-title bottom-info">
+                        <div>정보</div>
+                    </div>
+                    <div class="right-bottom-info">
+                        <img src="./image/olando_disneyland.webp" alt="" class="bottom-info-image">
+                        <textarea readonly name="botton-content-info" id="botton-content-info" class="bottom-content2">https://disneyparks.disney.go.com/kr/disneyworld/</textarea>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </main>
+</body>
+</html>

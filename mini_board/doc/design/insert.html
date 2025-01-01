@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_main.css">
+    <link rel="stylesheet" href="./css/insert.css">
+    <title>Travel Insert</title>
+</head>
+<body>
+    <form action="/insert.php" method="post" enctype="multipart/form-data" name="fileUpload">
+        <header>
+            <div class="head-title">
+                <a href="./main.html"><h1>Travels<span>_작성</span></h1></a>
+            </div>
+            <form action="./main.html">
+                <div class="btn-header">
+                    <a href="./main.html"><button type="submit" class="btn-header-css">작성</button></a>
+                    <a href="./main.html"><button type="button" class="btn-header-css">취소</button></a>
+                </div>
+            </form>
+        </header>
+        <main>
+            <div class="main-board">
+                <div class="main-title">
+                    <div class="title-content">
+                        <input type="text" placeholder="제목"></input>
+                    </div>
+                </div>
+                <div class="main-box">
+                    <div class="main-board-grid">
+                        <div class="main-board-left">
+                            <div class="main-board-info">
+                                <label for="country" class="main-board-info1">국가</label>
+                                <input type="text" name="country" id="country" class="main-board-info2" required>
+                            </div>
+                            <div class="main-board-info">
+                                <label for="city" class="main-board-info1">도시</label>
+                                <input type="text" name="city" id="city" class="main-board-info2" required>
+                            </div>
+                            <div class="main-board-info">
+                                <label for="departure" class="main-board-info1">출발</label>
+                                <input  type="date" id="departure" max="2077-06-20" min="1995-10-21" value="2024-09-26" class="main-board-info2"></input>
+                            </div>
+
+                            <div class="main-board-info">
+                                <label for="arrival" class="main-board-info1">도착</label>
+                                <input  type="date" id="arrival" max="2077-06-20" min="1995-10-21" value="2024-09-27" class="main-board-info2"></input>
+                            </div>
+                            <div class="main-board-info">
+                                <label for="companion" class="main-board-info1">동행</label>
+                                <input name="companion" id="companion" class="main-board-info2"></input>
+                            </div>
+                            <div class="main-board-info">
+                                <label class="main-board-info1">사진</label>
+                                <input type="file" id="photo1" accept="image/png, image/jpeg" class="main-board-info2"></input>
+                            </div>
+                            <div class="main-board-info">
+                                <label class="main-board-info1">사진</label>
+                                <input type="file" id="photo1" accept="image/png, image/jpeg" class="main-board-info2" /></input>
+                                <!-- <div class="insert-info1">사진</div>
+                                <div class="insert-info2"></div> -->
+                            </div>
+
+                        </div>
+                        <div class="insert-content-box">
+                            <div class="insert-content-title">내용</div>
+                            <div>
+                                <textarea  class="insert-content" placeholder="여기엔 내용"></textarea>
+                            </div>
+                        </div>
+                        <!-- <div class="insert-right">
+                            <div class="insert-photo">
+                                <label class="insert-info1">사진</label>
+                                <input type="file" id="photo1" accept="image/png, image/jpeg" class="insert-photo-content"></input>
+                            </div>
+                            <div class="insert-photo">
+                                <div class="insert-photo-title">사진</div>
+                                <input type="file" id="photo1" accept="image/png, image/jpeg" class="insert-photo-content"></input>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_bucket.css">
+    <title>Bucket List Insert</title>
+</head>
+<body>
+    <form action="./bucketlist.html">
+        <header>
+            <div class="head-title">
+                <a href="./bucketlist.html"><h1>Travels<span>_버킷리스트 작성</span></h1></a>
+            </div>
+            <div class="btn-header">
+                <a href="./bucketlist.html"><button type="submit" class="btn-header-css">저장</button></a>
+                <a href="./bucketlist.html"><button type="button" class="btn-header-css">취소</button></a>
+            </div>
+        </header>
+        <main>
+            <div class="bucket-board-grid">
+                <div class="main-board">
+                    <div class="main-title bucket-title-content">
+                        <input type="text" placeholder="제목" maxlength="20" name="title" required>
+                    </div>
+                    <div>
+                        <textarea name="bucketlist" id="bucketlist" placeholder="내용" class="insert-content"></textarea>
+                    </div>
+                </div>
+                <div class="bucket-right">
+                    <div class="bucket-right-top">
+                        <div class="bucket-right-align">
+                            <label for="country" class="top-left">국가</label>
+                            <input  name="country" id="country" class="top-right" required>
+                        </div>
+                        <div class="bucket-right-align">
+                            <label for="sort" class="top-left">분류</label>
+                            <select name="sort" id="sort" class="top-right">
+                                <option value="관광">관광</option>
+                                <option value="먹방">먹방</option>
+                                <option value="쇼핑">쇼핑</option>
+                                <option value="체험">체험</option>
+                                <option value="기타">기타</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bucket-right-bottom">
+                        <div class="main-title bottom-info">
+                            <div>정보</div>
+                        </div>
+                        <div class="right-bottom-info">
+                            <input type="file" id="info_img" name="info_img" class="bottom-info-image">
+                            <div>
+                                <textarea name="botton-content-info" id="botton-content-info" class="bottom-content" placeholder="내용"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </form>
+</body>
+</html>

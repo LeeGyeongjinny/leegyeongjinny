@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+}
+
+@font-face {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------------ */
+
+/* header */
+header {
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #435467;
+}
+
+header a {
+    color: #435467;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.head-title span {
+    font-size: 2.5rem;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #F9F9F9 inset;
+}
+
+
+/* ------------------------------------ */
+
+
+/* button */
+
+button {
+    background-color: #98B6D8;
+    font-weight: 900;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-error {
+    width: 150px;
+}
+
+.btn-selected {
+    background-color: #6FB2FF;
+}
+
+
+/* button header */
+.btn-header{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.btn-header-css {
+    font-size: 1.5rem;
+    fill: white;
+    padding: 0.5em 0.5em;
+    padding-left: 0.7em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    font-weight: 1000;
+    width: 110px;
+    height: 57px;
+}
+
+.btn-header-css span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-header-css svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-header-css:hover {
+    background: #6FB2FF;
+}
+
+.btn-header-css:hover .svg-wrapper {
+    transform: scale(1.2);
+    transition: 0.5s linear;
+}
+
+.btn-header-css:hover svg {
+    transform: translateX(0.9em) scale(1.1);
+    fill: #fff;
+}
+
+.btn-header-css:hover span {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+.btn-header-css:active {
+    transform: scale(0.95);
+}
+
+button:hover {
+    background-color: #0058CC;
+    /* background-color: #6FB2FF; */
+}
+
+
+/* button footer */
+
+.btn-footer {
+    font-size: 1.5rem;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+
+}   
+
+/* delete button hover */
+
+.head-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.btn-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+
+.btn-flex p {
+    display:none;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-right: 5px;
+    color: #F00;
+
+}
+
+.btn-del-chk:hover + p {
+    display: block;
+}
+
+
+/* ------------------------------------ */
+
+
+/* main */
+
+main {
+    width: 1000px;
+    min-height: 600px;
+    background-color: #E3F0FF;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.main-board {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+.main-title {
+    background-color: #6FB2FF;
+    border-radius: 50px 50px 0 0;
+    color: #fff;
+}
+
+.main-box {
+    background-color: #FFF;
+    border-radius: 0 0 50px 50px;
+    padding: 10px;
+}
+
+main a {
+    color: #000;
+}
+
+select, input {
+    border: none;
+    text-align: center;
+    padding: 5px;
+    outline: none;
+    background: transparent;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+
+/* 페이지네이션 */
+.main-footer {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+
+img:hover {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.15s ease-out;
+    transform: scale(1.6);
+}

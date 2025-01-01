@@ -1,0 +1,30 @@
+.bucket-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.bucket-main-title {
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.bucket-main-content {
+    width: 280px;
+    height: 160px;
+    line-height: 40px;
+    font-weight: 550;
+    color: #000;
+}
+
+.bucket-main-content span {
+    background-color: #E3F0FF;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 20px;
+}

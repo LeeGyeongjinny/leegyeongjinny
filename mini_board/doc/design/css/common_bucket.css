@@ -1,0 +1,110 @@
+.bucket-board-grid {
+    display: grid;
+    grid-template-columns: 650px 1fr;
+}
+
+/* .bucket-title {
+    text-align: center;
+    width: 600px;
+    height: 60px;
+} */
+
+.bucket-title-content{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    width: 600px;
+    color: #fff;
+}
+
+.bucket-title-content input{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.6rem;
+    width: 400px;
+    height: 60px;
+    color: #fff;
+}
+
+.bucket-title-content p {
+    padding: 15px;
+}
+
+.main-board textarea{
+    width: 600px;
+    height: 460px;
+    background-color: #F9F9F9;
+    border-radius: 0 0 50px 50px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+
+.bucket-right{
+    display: grid;
+    grid-template-rows: 150px 350px;
+}
+
+.bucket-right-top{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.bucket-right-align {
+    display: flex;
+    text-align: center;
+}
+
+.top-left{
+    background-color: #98B6D8;
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px 0 0 30px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.top-right{
+    background-color: #F9F9F9;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 0 30px 30px 0;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.bottom-info {
+    width: 250px;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.right-bottom-info {
+    width: 250px;
+    height: 300px;
+    background-color: #F9F9F9;
+    border-radius: 0 0 50px 50px; 
+    text-align: center;
+    padding: 5px;
+}
+.bottom-info-image{
+    max-width: 200px;
+    max-height: 140px;
+    margin: 0 auto;
+}
+
+.right-bottom-info textarea{
+    width: 240px;
+    height: 150px;
+    background-color: #F9F9F9;
+    border-radius: 0 0 50px 50px;    
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}

@@ -1,0 +1,34 @@
+.item {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 2.2fr 2.2fr;
+    text-align: center;
+}
+
+.main-title-content {
+    font-size: 1.8rem;
+    padding: 13px;
+}
+
+.main-box-content{
+    min-height: 400px;
+}
+
+.main-content {
+    background-color: #E3F0FF;
+    border-radius: 40px;
+    width: 900px;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px auto;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.date{
+    word-spacing: 15px;
+}
+
+/* .main-content a {
+    color: #000;
+} */
