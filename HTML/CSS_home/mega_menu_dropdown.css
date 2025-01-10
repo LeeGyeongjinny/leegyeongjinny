@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* 메뉴 */
+.navbar {
+    overflow: hidden;
+    background-color: #F1F1F1;
+    font-family: Arial;
+    box-shadow: 0px 8px 16px 0px rgba(0,65,122,0.2);
+    /* z-index: 1; */
+}
+
+/* 메뉴 안의 링크 */
+.navbar a {
+    float: left;    /*요소를 왼쪽으로 보냄*/
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* 드롭다운 내용물 */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* 드롭다운 버튼 */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;  /*테두리 밖에 넣는 라인*/
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;  /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* 메뉴 링크에 호버 시*/
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: #0081F2;
+    font-weight: bold;
+    border-bottom: #0081F2 solid 3px;
+}
+
+/* 드롭다운 내용물(기본상태를 숨김으로) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-bottom: #0081F2 solid 3px;
+    /* z-index: 1; */
+}
+
+/* 메가메뉴 제목 (선택사항) */
+.dropdown-content .header {
+    background: white;
+    padding: 16px;
+    color: #0081F2;
+}
+
+/* 드롭다운 메뉴에 호버 시 보이게 함 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 서로 붙어있는 칸 세 개 생성 */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: white;
+    height: 250px;
+}
+
+/* 칸 안의 링크 */
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* 호버 시 배경 컬러 */
+.column a:hover {
+    background-color: white;
+    border: none;
+    font-weight: none;
+}
+
+/* 칸 다음 부분 비우기 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* *************************************************************************** */
+
+/* .header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    gap: 20px;
+}
+
+.header-list-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.header-list-hover a, .header-list-hover p {
+    color: #01083A;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 5px 10px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header-list-hover a:before
+, .header-list-hover a:after
+, .header-list-hover p:before
+, .header-list-hover p:after {
+    content: "";
+    transition: 0.3s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 2px;
+}
+
+.header-list-hover a:before
+, .header-list-hover p:before {
+    right: 0;
+    top: 0;
+}
+
+.header-list-hover a:after
+, .header-list-hover p:after {
+    left: 0;
+    bottom: 0;
+}
+
+.header-list-hover a:hover:before
+, .header-list-hover a:hover:after
+, .header-list-hover p:hover:before
+, .header-list-hover p:hover:after {
+    width: 100%;
+    background: #01083A;
+}
+
+.header-list-dropdown{
+    position : relative;
+    display : inline-block;
+}
+
+.header-list-dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1;
+}
+
+.header-list-dropdown-content a{
+    display: block;
+    font-size: 20px;   
+}
+
+.header-list-dropdown:hover .header-list-dropdown-content {
+    display: block;
+    background: #fff;
+} */
+
+
+
+/* *************************************************************************** */
+ul li {
+    list-style-type: none;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    gap: 20px;
+    overflow: hidden;
+}
+
+/* 호텔, 상품, 게시판 hover */
+.header-list-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.header-list-hover a, .header-list-hover p {
+    color: #01083A;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 5px 10px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    /* margin-top: 5px; */
+}
+
+.header-list-hover a:before
+, .header-list-hover a:after
+, .header-list-hover p:before
+, .header-list-hover p:after {
+    content: "";
+    transition: 0.3s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 2px;
+}
+
+.header-list-hover a:before
+, .header-list-hover p:before {
+    right: 0;
+    top: 0;
+}
+
+.header-list-hover a:after
+, .header-list-hover p:after {
+    left: 0;
+    bottom: 0;
+}
+
+.header-list-hover a:hover:before
+, .header-list-hover a:hover:after
+, .header-list-hover p:hover:before
+, .header-list-hover p:hover:after {
+    width: 100%;
+    background: #01083A;
+}
+
+.header-list-dropdown{
+    position : relative;
+    display : inline-block;
+}
+
+.header-list-dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1;
+}
+
+.header-list-dropdown-content a{
+    display: block;
+    font-size: 20px;   
+}
+
+.header-list-dropdown:hover .header-list-dropdown-content {
+    display: block;
+    background: #fff;
+}
+
+
+/* ******************************************************************** */
+
+/* 메뉴 */
+.navbar1 {
+    overflow: hidden;
+    background-color: #F1F1F1;
+    font-family: Arial;
+    box-shadow: 0px 8px 16px 0px rgba(0,65,122,0.2);
+    /* z-index: 1; */
+}
+
+/* 메뉴 안의 링크 */
+.navbar1 a {
+    float: left;    /*요소를 왼쪽으로 보냄*/
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* 드롭다운 내용물 */
+.dropdown1 {
+    float: left;
+    overflow: hidden;
+}
+
+/* 드롭다운 버튼 */
+.dropdown1 .dropbtn1 {
+    font-size: 16px;
+    border: none;
+    outline: none;  /*테두리 밖에 넣는 라인*/
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;  /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* 메뉴 링크에 호버 시*/
+.navbar1 a:hover, .dropdown1:hover .dropbtn1 {
+    background-color: white;
+    color: #0081F2;
+    font-weight: bold;
+    border-bottom: #0081F2 solid 3px;
+}
+
+/* 드롭다운 내용물(기본상태를 숨김으로) */
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-bottom: #0081F2 solid 3px;
+    /* z-index: 1; */
+}
+
+/* 메가메뉴 제목 (선택사항) */
+.dropdown-content1 .header {
+    background: white;
+    padding: 16px;
+    color: #0081F2;
+}
+
+/* 드롭다운 메뉴에 호버 시 보이게 함 */
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+/* 서로 붙어있는 칸 세 개 생성 */
+.column1 {
+    /* float: left;
+    width: 33.33%; */
+    padding: 10px;
+    background-color: rgba(73, 73, 73, 0.2);
+    height: 350px;
+}
+
+/* 칸 안의 링크 */
+.column1 a {
+    /* float: none; */
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* 호버 시 배경 컬러 */
+.column1 a:hover {
+    background-color: white;
+    border: none;
+    font-weight: none;
+}
+
+/* 칸 다음 부분 비우기 */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
