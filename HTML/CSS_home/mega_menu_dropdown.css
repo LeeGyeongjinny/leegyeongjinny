@@ -15,7 +15,7 @@ ul li {
     overflow: hidden;
     background-color: #F1F1F1;
     font-family: Arial;
-    box-shadow: 0px 8px 16px 0px rgba(0,65,122,0.2);
+    /* box-shadow: 0px 8px 16px 0px rgba(0,65,122,0.2); */
     /* z-index: 1; */
 }
 
@@ -66,11 +66,11 @@ ul li {
 }
 
 /* 메가메뉴 제목 (선택사항) */
-.dropdown-content .header {
+/* .dropdown-content .header {
     background: white;
     padding: 16px;
     color: #0081F2;
-}
+} */
 
 /* 드롭다운 메뉴에 호버 시 보이게 함 */
 .dropdown:hover .dropdown-content {
@@ -205,16 +205,22 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 8px;
+    /* margin: 0 8px; */
     gap: 20px;
     overflow: hidden;
 }
+
+
 
 /* 호텔, 상품, 게시판 hover */
 .header-list-flex {
     display: flex;
     flex-direction: row;
     gap: 5px;
+}
+
+.header-list-hover {
+    overflow: hidden;
 }
 
 .header-list-hover a, .header-list-hover p {
@@ -227,7 +233,6 @@ ul li {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    /* margin-top: 5px; */
 }
 
 .header-list-hover a:before
@@ -285,6 +290,45 @@ ul li {
 }
 
 
+/* 드롭다운 내용물(기본상태를 숨김으로) */
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(73, 73, 73, 0.2);
+}
+
+
+/* 드롭다운 메뉴에 호버 시 보이게 함 */
+.header-list-hover:hover .dropdown-content2 {
+    display: block;
+}
+
+/* 호버 시 배경 컬러 */
+.column2 a:hover  {
+    background-color: white;
+}
+
+.column2 a, .coloum2 p {
+    font-size: 20px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    /* gap: 10px; */
+}
+
+/* .row3 {
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+} */
+
+
 /* ******************************************************************** */
 
 /* 메뉴 */
@@ -294,6 +338,8 @@ ul li {
     font-family: Arial;
     box-shadow: 0px 8px 16px 0px rgba(0,65,122,0.2);
     /* z-index: 1; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 /* 메뉴 안의 링크 */
@@ -358,26 +404,27 @@ ul li {
 .column1 {
     /* float: left;
     width: 33.33%; */
-    padding: 10px;
+    display: grid;
+    /* grid-template-rows: repeat(4, 1fr); */
+    /* padding: 10px; */
     background-color: rgba(73, 73, 73, 0.2);
-    height: 350px;
+    /* height: 350px; */
 }
 
 /* 칸 안의 링크 */
 .column1 a {
     /* float: none; */
     color: black;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+    /* padding: 16px; */
+    /* text-decoration: none; */
+    /* display: block; */
+    text-align: center;
 }
 
 /* 호버 시 배경 컬러 */
 .column1 a:hover {
     background-color: white;
     border: none;
-    font-weight: none;
 }
 
 /* 칸 다음 부분 비우기 */
