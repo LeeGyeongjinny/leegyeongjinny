@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./registration_chk2.css">
+    <title>회원가입 이용 약관 폼</title>
+</head>
+<body>
+    <div class="form-box">
+        <div class="form-header-title">
+            <h1>회원가입 HTML</h1>
+            <p>회원이 되어 다양한 경험을 공유해보세요!</p>
+            
+        </div>
+        <div class="chk-form">
+            <h3>약관 동의</h3>
+            <div class="fregister">
+                <div class="chk-container chk-container-all">
+                    <input type="checkbox" id="a" class="screen-reader">
+                    <div class="label-box checks2">
+                        <span class="check-icon" aria-hidden="true"></span>
+                        <label for="a">회원가입 약관에 모두 동의합니다</label>
+                    </div>
+                </div>
+
+                <div class="textarea">
+                    <div class="chk-container">
+                        <input type="checkbox" id="b" class="screen-reader">
+                        <div class="label-box">
+                            <span class="check-icon" aria-hidden="true"></span>
+                            <label for="b">이용약관 동의<span>(필수)</span></label>
+                        </div>
+                    </div>
+                    <textarea readonly="">제1조(목적)</textarea>
+                </div>
+
+                <div class="textarea">
+                    <div class="chk-container">
+                        <input type="checkbox" id="c" class="screen-reader" checked>
+                        <div class="label-box">
+                            <span class="check-icon" aria-hidden="true"></span>
+                            <label for="c">개인정보 수집 및 이용 동의<span>(필수)</span></label>
+                        </div>
+                    </div>
+                    <textarea readonly="">개인정보처리방침 </textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

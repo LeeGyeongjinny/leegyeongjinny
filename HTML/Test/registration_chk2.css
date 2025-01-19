@@ -1,0 +1,142 @@
+input {
+    /* border-bottom: 1px solid #01083a;
+    background: transparent; */
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    
+    vertical-align: middle;
+}
+
+input::placeholder {
+    opacity: 0.6;
+}
+
+.form-box {
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    gap: 30px;
+    place-items: center;
+    margin: 90px auto;
+    width: 600px;
+    padding: 0 20px 20px;
+}
+
+.form-header-title {
+    place-items: center;
+    margin-bottom: 50px;
+    color: #01083a;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-weight: 900;
+    /* margin-bottom: 10px; */
+    position: relative;
+    padding: 0 0 10px 0;
+    font-size: 18px;
+    color: #2d2f43;
+    font-weight: 500;
+    border-bottom: 2px solid #3d435f;
+}
+
+.fregister {
+    line-height: 55px;
+    text-align: left;
+}
+
+.fregister textarea {
+    width: 100%;
+    resize: none;
+}
+span {
+    color: red;
+    font-size: 13px;
+}
+
+.chk-container {
+    display: flex;
+    position: relative;
+}
+
+.chk-container-all {
+    border-bottom: 1px solid #d8d9df;
+}
+/* .chk-container + .chk-container {
+    margin-top: 0.7em;
+} */
+.screen-reader { /* 스크린 리더를 고려해서 체크박스를 화면에서 숨김 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    margin: -1px;
+    clip-path: inset(50%);
+}
+
+.label-box {
+    position: relative;
+    line-height: 55px;
+    text-align: left;
+}
+
+.check-icon {
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid gray;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.check-icon::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 30%;
+    height: 55%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-70%) rotateZ(40deg);
+    border-right: 1.7px solid gray;
+    border-bottom: 1.7px solid gray;
+}
+
+label {
+    padding-left: 2.2em;
+    position: relative;
+    cursor: pointer;
+    color: #2d2f43;
+}
+
+[type="checkbox"]:checked + .label-box .check-icon {
+    border-color:  #3A8AFD;
+    background-color: #3A8AFD;
+}
+
+[type="checkbox"]:checked + .label-box .check-icon::before {
+    border-color: #fff;
+}
+
+.chk-form {
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 70px 40px;
+    background: #fff;
+    border: 1px solid #d8d9de;
+    border-radius: 4px;
+}
+
+.checks2 {
+    position: relative;
+}
